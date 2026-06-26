@@ -196,7 +196,7 @@ View all route queries from the current session with their paths, distances, and
 ```
 smart-transit-planner/
 │
-├── smart_transit_planner.cpp   # Full source — single-file project
+├── main.cpp   # Full source — single-file project
 └── README.md
 ```
 
@@ -225,6 +225,3 @@ Removing an edge requires rebuilding the adjacency list. A boolean flag means bl
 
 ---
 
-## 📄 License
-
-This project is open source under the [MIT License](LICENSE).

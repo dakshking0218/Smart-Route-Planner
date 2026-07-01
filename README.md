@@ -80,32 +80,7 @@ Traffic factors are stored per-edge and read at query time — not baked in at c
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-- C++17 compatible compiler (`g++`, `clang++`, MSVC)
-
-### Build & Run
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/smart-transit-planner.git
-cd smart-transit-planner
-
-# Compile
-g++ -std=c++17 -O2 -o planner smart_transit_planner.cpp
-
-# Run
-./planner
-```
-
-### Windows (MinGW)
-```bash
-g++ -std=c++17 -O2 -o planner.exe smart_transit_planner.cpp
-planner.exe
-```
-
----
 
 ## 🖥️ Features & Usage
 
@@ -191,14 +166,6 @@ View all route queries from the current session with their paths, distances, and
 
 ---
 
-## 📁 Project Structure
-
-```
-smart-transit-planner/
-│
-├── main.cpp   # Full source — single-file project
-└── README.md
-```
 
 ---
 
@@ -212,16 +179,6 @@ BFS finds the fewest hops, not the fastest route. Since edges have variable weig
 
 **Why store `blocked` as a flag vs. removing the edge?**
 Removing an edge requires rebuilding the adjacency list. A boolean flag means blocking and unblocking is `O(degree)` — fast and reversible, which is realistic for a live traffic system.
-
----
-
-## 🛠️ Possible Extensions
-
-- [ ] File I/O to load custom city maps from `.txt` or `.csv`
-- [ ] GUI visualization using SFML or SDL2
-- [ ] Multiple simultaneous route comparisons
-- [ ] Time-of-day based traffic scheduling
-- [ ] Bidirectional Dijkstra for even faster queries on large graphs
 
 ---
 
